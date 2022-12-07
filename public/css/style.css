@@ -1,0 +1,262 @@
+* {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+/*------------------------------- 共通CSS -------------------------------*/
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.title {
+    font-size: 30px;
+}
+
+.button-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+.required::after {
+    margin-left: 5px;
+    color: red;
+    content: "※";
+}
+.error_msg {
+    color: red;
+}
+.example {
+    color: gray;
+}
+.border-none {
+    border: none;
+    outline: none;
+
+    pointer-events: none;
+}
+.border-none:hover {
+    border: none;
+    outline: none;
+
+    pointer-events: none;
+}
+.send-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    font-size: 18px;
+}
+.send-button-mini {
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    font-size: 15px;
+}
+.back-button {
+    border: none;
+    background: white;
+    font-size: 15px;
+}
+.under {
+    text-decoration: underline;
+}
+.margin-right {
+    margin-right: 30px;
+}
+
+/*------------------------------- 問い合わせ・確認画面CSS -------------------------------*/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+.contact__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+}
+.contact__item-top {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    text-align: center;
+}
+.contact__hed {
+    width: 30%;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+}
+.contact__hed-top {
+    width: 30%;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+}
+.contact__data {
+    width: 100%;
+    font-size: 18px;
+    text-align: left;
+}
+.contact__data-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    text-align: left;
+}
+.contact__data-row-left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+}
+.contact__data-harf {
+    width: 49%;
+    font-size: 18px;
+    text-align: left;
+}
+.contact__data-posticon {
+    width: 10%;
+    font-size: 18px;
+    text-align: center;
+}
+.contact__data-postcode {
+    width: 90%;
+    font-size: 18px;
+    text-align: left;
+}
+.contact__data-radio {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    margin-right: 10px;
+    text-align: center;
+}
+.contact__data-radio1 {
+    transform: scale(2);
+
+    accent-color: black;
+    transform-origin: 100% 75%;
+}
+.contact__data-textarea {
+    width: 100%;
+    font-size: 18px;
+    text-align: left;
+    resize: none;
+}
+
+/*------------------------------- 送信完了画面CSS -------------------------------*/
+.thanks-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.thanks-msg {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+/*------------------------------- 管理画面CSS -------------------------------*/
+.manage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    border: 1px solid black;
+}
+.manage__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+}
+.manage__hed {
+    width: 20%;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+}
+.manage__data {
+    width: 100%;
+    font-size: 18px;
+    text-align: left;
+}
+.manage__data-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    text-align: left;
+}
+.manage__data-row-left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+}
+.manage__data-harf {
+    width: 49%;
+    font-size: 18px;
+    text-align: left;
+}
+.manage__data-radio {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    margin-right: 10px;
+    text-align: center;
+}
+.manage__data-radio1 {
+    transform: scale(2);
+
+    accent-color: black;
+    transform-origin: 100% 75%;
+}
+.manage__table-hed {
+    padding: 10px 20px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+.manage__table-data {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-align: center;
+}
+.page-info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px 0;
+    color: black;
+}
+.pagination {
+    color: black;
+}
